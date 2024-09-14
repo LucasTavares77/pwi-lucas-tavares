@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Trabalho HTML Lucas Tavares
+</h2>
+<p>08/09/2024</p>
+<p></p>
+
+<header>
+  <h2>Caminhos</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Texto 1</a></li>
+      <li><a href="#">Texto 2</a></li>
+      <li><a href="#">Texto 3</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Desejo que você
+      Não tenha medo da vida, tenha medo de não vivê-la.
+      Não há céu sem tempestades, nem caminhos sem acidentes.
+      Só é digno do pódio quem usa as derrotas para alcançá-lo.
+      Só é digno da sabedoria quem usa as lágrimas para irrigá-la.
+      Os frágeis usam a força; os fortes, a inteligência.
+      Seja um sonhador, mas una seus sonhos com disciplina,
+      Pois sonhos sem disciplina produzem pessoas frustradas.
+      Seja um debatedor de ideias. Lute pelo que você ama.</h1>
+    <p> Inspire-se!
+      Leia um bom livro.
+      Assista a um bom filme, ou um programa educativo na TV.
+      Veja uma boa peça teatral, participe.
+      E como descobrir se o livro, o filme, o programa ou a peça são bons?
+      Só lendo, assistindo, vendo, procurando…
+      O bom do conhecimento é que ele não ocupa espaço.
+      Podemos carregar malas e malas de conhecimento.
+      Sempre haverá uma língua nova para aprender.
+      Boas ideias não surgem do nada,
+      surgem do que conhecemos.</p>
+    <p> Apaixone-se!
+      Decida-se pelo que realmente te dá prazer.
+      Não faça grandes projetos com o que não te dá alegria.
+      Que adianta a bela profissão na alma vazia?
+      Melhor ser aquilo que idealizamos,
+      que viver um sonho furado de outra pessoa.
+      Apaixone-se pelo seu cheiro, pela sua palavra.
+      Coloque amor em cada gesto, em cada ato.
+      A vida naturalmente recompensa o amor com mais amor. </p>
+  </article>
+</section>
+
+
+<div>TENHA</div>
+<h2>Foco</h2>
+  <p>um objetivo pra alcançar.</p>
+  <p>X</p>
+</div>
+
+<div>
+  <h2>Força</h2>
+  <p>pra nunca desistir de lutar.</p>
+  <p>X</p>
+</div>
+
+<div>
+  <h2>Fé</h2>
+  <p>pra me manter de pé.</p>
+  <p>X</p>
+</div>
+<footer>E SIGA</footer>
+
+</body>
+</html>
